@@ -1,0 +1,28 @@
+### GET ALL PERSONS
+GET http://localhost:3001/api/blogs
+
+### POST request con token de Lucia
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTM3ZTBmY2JmZmZiZjBkYzQ2ZThhZCIsInVzZXJuYW1lIjoiR2FsaWFuYSIsImlhdCI6MTcwOTUzODE0MH0.WjLQ93-wMDVkOAYDXOu_ZDoa_fOegVv9LdmJUrrf28M
+
+{
+	"title": "Blog with middleare userExtractor 2",
+    "author": "Midudev",
+    "url": "url_of_blog4",
+    "likes": 5
+}
+
+### DELETE
+DELETE http://localhost:3001/api/blogs/65e590a296442728a3ac37d3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTM3ZTBmY2JmZmZiZjBkYzQ2ZThhZCIsInVzZXJuYW1lIjoiR2FsaWFuYSIsImlhdCI6MTcwOTUzODE0MH0.WjLQ93-wMDVkOAYDXOu_ZDoa_fOegVv9LdmJUrrf28M
+
+### POST request
+PUT  http://localhost:3001/api/blogs/dasfgcdasfc
+Content-Type: application/json
+
+{
+	"title": "EditedTitle",
+    "url": "editedUrl",
+    "likes": 123
+}

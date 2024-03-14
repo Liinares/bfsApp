@@ -1,0 +1,34 @@
+### GET ALL PERSONS
+GET http://localhost:3001/api/persons
+
+### GET ONE PERSON
+GET http://localhost:3001/api/persons/65d71df9b6cfd8c2f137e53c
+
+### DELETE ONE PERSON
+DELETE  http://localhost:3001/api/persons/65d71df9b6cfd8c2f137e53c
+
+### POST request
+POST  http://localhost:3001/api/persons 
+Content-Type: application/json
+
+{
+	"name": "Pablo",
+    "number": "123-122313124"
+}
+
+### POST bad request
+POST  http://localhost:3001/api/persons 
+Content-Type: application/json
+
+{
+	"name": "Miguel"
+}
+
+### POST request
+PUT  http://localhost:3001/api/persons/65d85d4fdf9ca68317088f2e
+Content-Type: application/json
+
+{
+	"name": "Mi",
+    "number": "3124132"
+}
